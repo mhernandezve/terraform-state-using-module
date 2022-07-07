@@ -9,9 +9,9 @@ terraform {
 
 module "storage-mod" {
   source       = "./modules/storage"
-  bucket-name  = "mhg-storage-mod"
+  bucket_name  = "mhg-storage-mod"
   region       = "us-east-1"
-  acl          = "public-read"
+  acl          = "private"
   allow_access = ["arn:aws:iam::112830045092:user/miguel.globant"]
   versioned    = "Enabled"
 }
